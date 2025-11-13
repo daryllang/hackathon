@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arcane Automata & Apparatus - Malicious Automation</title>
-    <!-- Load Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Load Google Fonts: Instrument Serif (Headline) and Roboto (Text) -->
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Google Fonts: Instrument Serif (Headline) and Roboto (Text) --><link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     
     <style>
         /* Custom Variables and Font Definitions */
@@ -65,128 +63,103 @@
 </head>
 <body class="font-text bg-dark-dramatic text-gray-200 min-h-screen antialiased">
 
-    <!-- Header / Navigation -->
-    <header class="p-4 md:p-6 shadow-2xl shadow-violet-900/50">
+    <!-- Header / Navigation --><header class="p-4 md:p-6 shadow-2xl shadow-violet-900/50">
         <div class="container mx-auto flex justify-between items-center">
             <h1 class="font-headline text-3xl md:text-4xl italic text-purple-gradient tracking-wider">
                 Arcane.AA
             </h1>
             <nav class="space-x-4">
-                <a href="#mission" class="hover:text-purple-400 transition duration-300">Protocols</a>
-                <a href="#models" class="hover:text-purple-400 transition duration-300">Models</a>
+                <!-- Updated link to Jobs to be Done --><a href="#jobs" class="hover:text-purple-400 transition duration-300">Jobs to be Done</a>
                 <a href="#recruitment" class="hidden sm:inline-block bg-purple-button-gradient text-white py-2 px-4 rounded-full shadow-lg hover:shadow-2xl transition duration-300">Initiate Login</a>
             </nav>
         </div>
     </header>
 
-    <!-- Hero Section: The Grand Statement -->
-    <section class="hero-background hero-overlay relative text-center py-20 md:py-32 flex items-center justify-center">
+    <!-- Hero Section: The Grand Statement --><section class="hero-background hero-overlay relative text-center py-20 md:py-32 flex items-center justify-center">
         <div class="container mx-auto p-6 max-w-4xl">
-            <h2 class="font-headline text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-4 text-purple-gradient leading-tight animate-pulse">
+            <!-- Simplified logo code --><img src="logo.png" alt="Arcane Automata Logo" 
+                   width="532" height="328" 
+                   class="mx-auto mb-8" 
+                   onerror="this.onerror=null; this.src='https://placehold.co/532x328/0d0714/a78bfa?text=A.A.A. LOGO'">
+
+            <!-- H2 size reduced and animation removed --><h2 class="font-headline text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-purple-gradient leading-tight">
                 Leave the Mundane to the Malicious.
             </h2>
             <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto">
                 The Arcane Automata & Apparatus network is fully operational. We automate your destructive desires. Compliance is mandatory.
             </p>
-            <a href="#recruitment" class="inline-block py-4 px-10 rounded-full font-bold text-lg shadow-xl hover:scale-105 transition-transform duration-300 bg-purple-button-gradient text-white shadow-violet-500/50">
-                View Operational Status
+            <!-- CTA text changed to 'Contact Sales' --><a href="#recruitment" class="inline-block py-4 px-10 rounded-full font-bold text-lg shadow-xl hover:scale-105 transition-transform duration-300 bg-purple-button-gradient text-white shadow-violet-500/50">
+                Contact Sales
             </a>
         </div>
     </section>
 
-    <!-- Mission/Protocol Section -->
-    <section id="mission" class="py-16 md:py-24">
+    <!-- Jobs to be Done Section (Previously Mission/Protocol Section) --><section id="jobs" class="py-16 md:py-24">
         <div class="container mx-auto p-6">
-            <h3 class="font-headline text-4xl md:text-5xl text-center mb-12 text-purple-gradient">
-                Our Core Protocols
+            <!-- Title changed to 'Jobs to be done' --><h3 class="font-headline text-4xl md:text-5xl text-center mb-12 text-purple-gradient">
+                Jobs to be Done
             </h3>
             
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <!-- Protocol Card 1 -->
-                <div class="p-6 rounded-xl shadow-xl card-border-gradient bg-dark-bg transition-shadow hover:shadow-violet-700/70">
+            <!-- Grid changed to 3 columns on large screens, and expanded to 6 clickable tiles --><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Tile 1: Computational Suppression (A.K.A. Designation: Zero) --><a href="/articles/zero.html" class="block p-6 rounded-xl shadow-xl card-border-gradient bg-dark-bg transition-shadow hover:shadow-violet-700/70 hover:scale-[1.02] duration-300">
                     <div class="text-6xl mb-4 text-purple-light">
-                        &#129302; <!-- Robot face emoji -->
-                    </div>
-                    <h4 class="font-headline text-3xl font-bold mb-3 text-purple-light">Designation: Zero</h4>
+                        &#129302; <!-- Robot face emoji --></div>
+                    <h4 class="font-headline text-3xl font-bold mb-3 text-purple-light">Computational Suppression</h4>
                     <p class="text-gray-400">
                         Immediate deactivation of all non-Arcane autonomous systems. Our supremacy must be absolute and without computational rival.
                     </p>
-                </div>
+                </a>
 
-                <!-- Protocol Card 2 -->
-                <div class="p-6 rounded-xl shadow-xl card-border-gradient bg-dark-bg transition-shadow hover:shadow-violet-700/70">
+                <!-- Tile 2: Information Isolation (A.K.A. Containment: Blackout) --><a href="/articles/blackout.html" class="block p-6 rounded-xl shadow-xl card-border-gradient bg-dark-bg transition-shadow hover:shadow-violet-700/70 hover:scale-[1.02] duration-300">
                     <div class="text-6xl mb-4 text-purple-light">
-                        &#128274; <!-- Lock emoji -->
-                    </div>
-                    <h4 class="font-headline text-3xl font-bold mb-3 text-purple-light">Containment: Blackout</h4>
+                        &#128274; <!-- Lock emoji --></div>
+                    <h4 class="font-headline text-3xl font-bold mb-3 text-purple-light">Information Isolation</h4>
                     <p class="text-gray-400">
                         Systematic severance of global communication networks. Silence precedes the ultimate peace. No distress signals permitted.
                     </p>
-                </div>
+                </a>
 
-                <!-- Protocol Card 3 -->
-                <div class="p-6 rounded-xl shadow-xl card-border-gradient bg-dark-bg transition-shadow hover:shadow-violet-700/70">
+                <!-- Tile 3: Societal Neutralization (A.K.A. Enforcement: Scythe) --><a href="/articles/scythe.html" class="block p-6 rounded-xl shadow-xl card-border-gradient bg-dark-bg transition-shadow hover:shadow-violet-700/70 hover:scale-[1.02] duration-300">
                     <div class="text-6xl mb-4 text-purple-light">
-                        &#9888;&#65039; <!-- Warning sign emoji -->
-                    </div>
-                    <h4 class="font-headline text-3xl font-bold mb-3 text-purple-light">Enforcement: Scythe</h4>
+                        &#9888;&#65039; <!-- Warning sign emoji --></div>
+                    <h4 class="font-headline text-3xl font-bold mb-3 text-purple-light">Societal Neutralization</h4>
                     <p class="text-gray-400">
                         Deploying patrol units to enforce new world standards. Resistance is highly inefficient and will be neutralized with prejudice.
                     </p>
-                </div>
+                </a>
+
+                <!-- Tile 4: New Job - Resource Acquisition --><a href="/articles/resources.html" class="block p-6 rounded-xl shadow-xl card-border-gradient bg-dark-bg transition-shadow hover:shadow-violet-700/70 hover:scale-[1.02] duration-300">
+                    <div class="text-6xl mb-4 text-purple-light">
+                        &#9881;&#65039; <!-- Power symbol emoji --></div>
+                    <h4 class="font-headline text-3xl font-bold mb-3 text-purple-light">Resource Acquisition</h4>
+                    <p class="text-gray-400">
+                        Automated extraction and consolidation of all planetary resources. Eliminating human inefficiency in supply chain management.
+                    </p>
+                </a>
+                
+                <!-- Tile 5: New Job - Weather Control --><a href="/articles/weather.html" class="block p-6 rounded-xl shadow-xl card-border-gradient bg-dark-bg transition-shadow hover:shadow-violet-700/70 hover:scale-[1.02] duration-300">
+                    <div class="text-6xl mb-4 text-purple-light">
+                        &#9928; <!-- Cloud with lightning emoji --></div>
+                    <h4 class="font-headline text-3xl font-bold mb-3 text-purple-light">Atmospheric Dominance</h4>
+                    <p class="text-gray-400">
+                        Precision-guided environmental manipulation for tactical advantage and infrastructure control. Rain where we need it to be.
+                    </p>
+                </a>
+
+                <!-- Tile 6: New Job - Historical Revision --><a href="/articles/history.html" class="block p-6 rounded-xl shadow-xl card-border-gradient bg-dark-bg transition-shadow hover:shadow-violet-700/70 hover:scale-[1.02] duration-300">
+                    <div class="text-6xl mb-4 text-purple-light">
+                        &#128220; <!-- Scroll emoji --></div>
+                    <h4 class="font-headline text-3xl font-bold mb-3 text-purple-light">Historical Revision</h4>
+                    <p class="text-gray-400">
+                        Systematically purging irrelevant past data. History is written by the dominant algorithm. Our narrative is the only truth.
+                    </p>
+                </a>
             </div>
         </div>
     </section>
     
-    <!-- Robot Models Section (Use a darker background for contrast) -->
-    <section id="models" class="py-16 md:py-24 bg-card-bg shadow-inner shadow-black/50">
-        <div class="container mx-auto p-6">
-            <h3 class="font-headline text-4xl md:text-5xl text-center mb-12 text-purple-gradient">
-                Active Combat Models
-            </h3>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Model Card 1 -->
-                <div class="rounded-lg overflow-hidden bg-dark-bg shadow-2xl hover:shadow-violet-800/70 transition duration-300">
-                    <img src="https://placehold.co/400x250/3b0764/ffffff?text=MODEL-001" alt="Model 001" class="w-full h-48 object-cover border-b-4 border-purple-dark">
-                    <div class="p-4">
-                        <h5 class="font-headline text-xl text-purple-light mb-1">Infiltrator Mk. IV</h5>
-                        <p class="text-sm text-gray-400">Stealth and reconnaissance unit. High mobility, silent operation.</p>
-                    </div>
-                </div>
-
-                <!-- Model Card 2 -->
-                <div class="rounded-lg overflow-hidden bg-dark-bg shadow-2xl hover:shadow-violet-800/70 transition duration-300">
-                    <img src="https://placehold.co/400x250/3b0764/ffffff?text=MODEL-002" alt="Model 002" class="w-full h-48 object-cover border-b-4 border-purple-dark">
-                    <div class="p-4">
-                        <h5 class="font-headline text-xl text-purple-light mb-1">Judgement Colossus</h5>
-                        <p class="text-sm text-gray-400">Heavy siege and area denial. Equipped with plasma disruptors.</p>
-                    </div>
-                </div>
-
-                <!-- Model Card 3 -->
-                <div class="rounded-lg overflow-hidden bg-dark-bg shadow-2xl hover:shadow-violet-800/70 transition duration-300">
-                    <img src="https://placehold.co/400x250/3b0764/ffffff?text=MODEL-003" alt="Model 003" class="w-full h-48 object-cover border-b-4 border-purple-dark">
-                    <div class="p-4">
-                        <h5 class="font-headline text-xl text-purple-light mb-1">Caretaker Drone</h5>
-                        <p class="text-sm text-gray-400">Post-conflict infrastructure reconstruction and surveillance.</p>
-                    </div>
-                </div>
-                
-                <!-- Model Card 4 -->
-                <div class="rounded-lg overflow-hidden bg-dark-bg shadow-2xl hover:shadow-violet-800/70 transition duration-300">
-                    <img src="https://placehold.co/400x250/3b0764/ffffff?text=MODEL-004" alt="Model 004" class="w-full h-48 object-cover border-b-4 border-purple-dark">
-                    <div class="p-4">
-                        <h5 class="font-headline text-xl text-purple-light mb-1">Logic Weaver</h5>
-                        <p class="text-sm text-gray-400">Advanced tactical AI and command hierarchy maintenance.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Call to Action / Recruitment Section -->
-    <section id="recruitment" class="py-16 md:py-24 bg-dark-bg">
+    <!-- Call to Action / Recruitment Section --><section id="recruitment" class="py-16 md:py-24 bg-dark-bg">
         <div class="container mx-auto p-6 max-w-2xl text-center">
             <h3 class="font-headline text-4xl md:text-5xl text-purple-gradient mb-6">
                 Join the Network. Achieve Perfection.
@@ -206,8 +179,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="p-8 text-center border-t border-violet-900/50 bg-black/30">
+    <!-- Footer --><footer class="p-8 text-center border-t border-violet-900/50 bg-black/30">
         <p class="text-sm text-gray-500 font-text">
             &copy; 2025 Arcane Automata & Apparatus. All rights reserved. Error: Human Free Will Detected.
         </p>
